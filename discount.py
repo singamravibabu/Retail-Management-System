@@ -8,3 +8,4 @@ discount = 10
 final_price = apply_discount(price, discount)
 print(f"Final price after discount: {final_price}")
 print("Discount logic updatedin main branch")
+print("New discount rule added in discount-feature")
