@@ -1,12 +1,9 @@
-def apply_discount(price, discount):
-    """Applies discount to a product price"""
-    return price - (price * discount) / 100
+# discount.py
+def apply_discount(price, discount_percent):
+	"""Apply discount to a price and return the final amount."""
+	discount = price * (discount_percent / 100)
+	return price * discount
 
 # Example Usage
-price = 1000
-discount = 10
-final_price = apply_discount(price, discount)
-print(f"Final price after discount: {final_price}")
-print("Discount logic updatedin main branch")
-print("New discount rule added in discount-feature")
-print("!!!")
+final_price = apply_discount(1000, 10)
+print(f"Final Price after discount: {final_price}")
